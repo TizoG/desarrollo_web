@@ -1,0 +1,41 @@
+body {
+  background-color: beige;
+}
+.flex-container {
+  display: flex;
+  border: 1px solid;
+  background-color: gray;
+  margin: 0px auto;
+  width: 80%;
+  justify-content: center; /* como se va a organizar el contenedor*/
+  /*flex-direction: column;*/
+  /*flex-wrap: wrap; Cuando no cabe salta a la siguiente linea*/
+  flex-flow: row wrap; /* Hace la funcion de flex-direction y flex-wrap*/
+  height: 600px;
+  align-items: center; /* Con esta propiedad podemos hacer que nuestra caja no ocupe el 100% del contenedor padre si los hijos no tiene una altura establecida*/
+}
+/* Si no tuvieramos las cajas con un alto establecido, las cajas ocuparian el 100% del contenedor al tener la propiedad flex*/
+.caja {
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  width: 120px;
+  /*height: 120px;*/
+  line-height: 120px;
+  text-align: center;
+  margin: 5px;
+}
+
+.c1 {
+  background-color: lightblue;
+  flex-grow: 1;
+}
+.c2 {
+  background-color: lightcoral;
+  flex-grow: 5;
+}
+.c3 {
+  background-color: lightgreen;
+  flex-grow: 1;
+}

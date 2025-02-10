@@ -1,0 +1,51 @@
+body {
+  background-color: antiquewhite;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  justify-content: stretch;
+  width: 80%;
+  margin: 0px auto;
+  background-color: lightgreen;
+  padding: 20px;
+  border: 1px solid;
+  /* grid-template-areas: 'cabecera' 'cabecera'
+                            'menu''menu'
+                            'contenido''lateral'
+                            'footer''footer'*/
+}
+.caja {
+  border: 4px solid;
+  background-color: lightgrey;
+  text-align: center;
+  line-height: 150px;
+}
+
+.c1 {
+  /*cabecera*/
+  grid-column: 1 / 4;
+  background-color: lightblue;
+}
+.c2 {
+  /*menu*/
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+  background-color: lightcyan;
+}
+
+.c3 {
+  /*contenido*/
+  grid-column: 3 / 4;
+  grid-row: 2 / span 4;
+  background-color: lightcoral;
+}
+
+.c4 {
+  /*lateral*/
+}
+.c5 {
+  /*footer*/
+}
