@@ -1,0 +1,30 @@
+.cards {
+  margin: 0px auto;
+  background-color: blanchedalmond;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards__card {
+  padding: 15px;
+  margin: 5px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: lightblue;
+}
+
+.card__title {
+  font-size: 20px;
+}
+
+.card__content {
+  color: gray;
+}
+
+.card__link {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: lightgreen;
+  text-decoration: none;
+  color: black;
+}
